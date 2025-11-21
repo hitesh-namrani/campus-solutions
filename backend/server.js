@@ -23,7 +23,7 @@ app.post('/api/verify-admin', (req, res) => {
 
 const DEPLOYED_CONTRACT_DATA = {
     Events: {
-        address: "0xAfBBA52783dF148F7AF25d14c4D514Be0D2E3925", 
+        address: "0x1192CE9A21d6452b9AaA13a36EdBEfcb4e4Bbc28", 
         abi: [
             { "inputs": [], "stateMutability": "nonpayable", "type": "constructor" },
             { "inputs": [], "name": "admin", "outputs": [{ "internalType": "address", "name": "", "type": "address" }], "stateMutability": "view", "type": "function" },
@@ -36,7 +36,7 @@ const DEPLOYED_CONTRACT_DATA = {
         ]
     },
         Governance: {
-        address: "0x9a0002a47E68bFb3b3e537d2DDFd3Cd586F6d72D", // Keep your address
+        address: "0x5D682A5b2E4874F7385c3a7B3a9a1DEE337EBaC4", // Keep your address
         abi: [
             // Write Functions
             { "inputs": [ { "internalType": "string", "name": "_description", "type": "string" }, { "internalType": "uint256", "name": "_days", "type": "uint256" } ], "name": "createProposal", "outputs": [ { "internalType": "uint256", "name": "", "type": "uint256" } ], "stateMutability": "nonpayable", "type": "function" },
@@ -49,7 +49,7 @@ const DEPLOYED_CONTRACT_DATA = {
         ]
     },
     Token: {
-        address: "0x0b1e9AEc4a103a7Cae9876aF167750C9b9Fdc343", 
+        address: "0x3264F6E803097a8440a18a6e6CA70fC04A6211CC", 
         abi: [
             { "inputs": [ { "internalType": "address", "name": "to", "type": "address" }, { "internalType": "uint256", "name": "amount", "type": "uint256" } ], "name": "mint", "outputs": [], "stateMutability": "nonpayable", "type": "function" },
             { "inputs": [], "name": "claimTokens", "outputs": [], "stateMutability": "nonpayable", "type": "function" },
@@ -66,4 +66,5 @@ app.get('*', (req, res) => {
 
 app.listen(port, () => {
     console.log(`Student Hub is LIVE at http://localhost:${port}`);
+
 });
